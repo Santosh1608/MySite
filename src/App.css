@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+.container aside {
+  flex: 3;
+}
+.container main {
+  flex: 7;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    max-width: 100%;
+  }
+}

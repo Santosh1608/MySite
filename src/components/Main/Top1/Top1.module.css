@@ -1,0 +1,39 @@
+.Top1 {
+  display: flex;
+  border-bottom: 1px solid rgb(219, 215, 215);
+  align-items: center;
+}
+.Top1 .Top1Buttons {
+  flex: 1;
+}
+.Top1 button {
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 500;
+}
+.Top1 button:first-child {
+  border-bottom: 0.3rem solid #673ab7;
+
+  color: #673ab7;
+  border-right: 1px solid rgb(219, 214, 214);
+}
+.Top1 i {
+  margin-right: 0.5rem;
+  color: #dadada;
+}
+.Top1 p {
+  font-weight: 400;
+}
+@media screen and (max-width: 700px) {
+  .Top1 {
+    max-width: 90%;
+  }
+  .Top1para {
+    display: none;
+  }
+  .Top1 .Top1Buttons {
+    display: flex;
+  }
+}

@@ -1,0 +1,39 @@
+.Top2 {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.Top2 .Trash,
+.Edit {
+  background: none;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+}
+.Edit i,
+.Trash i {
+  color: rgb(202, 201, 201);
+}
+.Top2 button:first-child {
+  margin-right: 1rem;
+  background: #673ab7;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+}
+#showClass {
+  background: none;
+  color: black;
+  border-bottom: 3px solid #673ab7;
+  color: #673ab7;
+  margin-right: 3rem;
+  border-right: 1px solid rgb(226, 226, 226);
+}
+@media screen and (max-width: 700px) {
+  .Top2 {
+    max-width: 90%;
+    padding: 2px;
+    display: flex;
+  }
+}

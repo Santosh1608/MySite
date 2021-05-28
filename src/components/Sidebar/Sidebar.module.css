@@ -1,0 +1,86 @@
+.Sidebar {
+  background: #fcfbff;
+  max-width: 18%;
+  min-height: 100vh;
+}
+.Sidebar div h2 {
+  color: #330b86;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.Sidebar div:first-child i {
+  color: #330b86;
+  font-size: 1.5rem;
+}
+.Sidebar div {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+aside div {
+  display: flex;
+  padding: 1rem 0;
+  color: #828282;
+  align-items: center;
+}
+aside div:last-child {
+  color: #673ab7;
+  background: #e1d8f1;
+  border-left: #673ab7 3px solid;
+}
+aside i {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.SideMenu {
+  display: none;
+}
+.SidebarModel {
+  background: #fcfbff;
+  max-width: 18%;
+  min-height: 100vh;
+  padding-right: 2rem;
+}
+.SidebarModel div h2 {
+  color: #330b86;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.SidebarModel div:first-child i {
+  color: #330b86;
+  font-size: 1.5rem;
+}
+.SidebarModel div {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.SidebarModel {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .Sidebar {
+    max-width: 50%;
+    display: none;
+    z-index: 100;
+    padding-right: 2rem;
+  }
+  .SidebarModel {
+    display: block;
+    z-index: 100;
+    min-width: 60vw;
+    padding-right: 2rem;
+  }
+  .SideMenu {
+    display: inline;
+    position: absolute !important;
+    top: 10px;
+    background: none;
+    left: 0;
+  }
+  .SideMenu div:last-child {
+    background: none;
+    border-left: none;
+    margin-left: 1rem;
+  }
+}

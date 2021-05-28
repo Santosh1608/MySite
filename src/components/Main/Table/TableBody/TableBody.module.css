@@ -1,0 +1,142 @@
+.More {
+  display: flex;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+.tBody i {
+  margin-right: 1rem;
+}
+.tBody {
+  background: #ffffff;
+  font-weight: 400;
+}
+.Show i {
+  color: #ccc;
+}
+.Show {
+  cursor: pointer;
+}
+.Toggle {
+  cursor: pointer;
+}
+.Toggle i {
+  color: #dadada;
+}
+#TeamName {
+  text-align: left;
+}
+.TeamButton {
+  padding: 1rem 1rem;
+  border-radius: 25px;
+}
+
+.Wrap {
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+}
+.Row {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid rgb(216, 216, 216);
+}
+.Row div {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+}
+.Row div:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #673ab7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media screen and (max-width: 700px) {
+  .More {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    max-width: 80%;
+    margin-right: 0;
+    margin: auto;
+  }
+  .Show div,
+  .Toggle div {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+  }
+  .TeamButton {
+    padding: 0.5rem 0.1rem !important;
+    border-radius: 25px;
+  }
+  #TeamName i {
+    display: none !important;
+  }
+  .Summary {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .More * {
+    flex: 1;
+    text-align: left;
+  }
+  .Total {
+    display: none;
+  }
+}

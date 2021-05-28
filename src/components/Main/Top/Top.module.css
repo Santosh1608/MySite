@@ -1,0 +1,20 @@
+.Top {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.Top * {
+  padding: 0 1rem;
+}
+.Top i {
+  color: #828282;
+}
+.Top p {
+  font-weight: 500;
+}
+@media screen and (max-width: 700px) {
+  .Top {
+    max-width: 90%;
+  }
+}

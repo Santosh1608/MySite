@@ -1,0 +1,28 @@
+.TeamHeader {
+  display: flex;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+.TeamHeader button {
+  background: none;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+}
+.TeamHeader i {
+  color: #dadada;
+}
+.TeamHeader i:first-child {
+  color: rgb(70, 68, 68);
+}
+.TeamHeader * {
+  margin-right: 1.2rem;
+}
+.TeamHeader p {
+  color: #673ab7;
+}
+@media screen and (max-width: 700px) {
+  .TeamHeader {
+    padding: 20px;
+  }
+}

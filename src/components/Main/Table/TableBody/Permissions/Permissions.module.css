@@ -1,0 +1,53 @@
+.Permissions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 8rem;
+  border-left: 1px solid rgb(212, 212, 212);
+}
+.Permissions span {
+  padding-top: 1rem;
+}
+
+.Permissions input[type="checkbox"] {
+  display: none;
+}
+.Permissions input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+  margin-right: 0.4rem;
+}
+.Permissions input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background: #673ab7;
+  border-color: #673ab7;
+}
+@media screen and (max-width: 700px) {
+  .Permissions {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    border-top: 1px solid rgb(212, 212, 212);
+    border-left: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Permissions {
+    display: flex;
+    padding-left: 0.5rem;
+  }
+  .Permissions span {
+    display: block;
+    text-align: center;
+  }
+}

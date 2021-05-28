@@ -1,0 +1,70 @@
+.AccessControl {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8rem;
+  padding-top: 1rem;
+}
+.Access {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+.Access > div {
+  flex: 0;
+}
+.Access div:last-child {
+  flex: 1;
+}
+.Access div:last-child {
+  margin-left: 0.5rem;
+}
+.Access p:last-child {
+  color: #ccc;
+}
+.Access div:first-child {
+  padding-right: 0.3rem;
+}
+.AccessControl input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.AccessControl input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #673ab7;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+@media screen and (max-width: 700px) {
+  .AccessControl {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .AccessControl {
+    display: flex;
+    padding-right: 0;
+  }
+  .Access {
+    padding: 1rem;
+  }
+}
